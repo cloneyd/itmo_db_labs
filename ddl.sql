@@ -1,7 +1,7 @@
-DROP SCHEMA IF EXISTS orders CASCADE;
+DROP SCHEMA IF EXISTS marketplace CASCADE;
 
-CREATE SCHEMA orders;
-SET SCHEMA 'orders';
+CREATE SCHEMA marketplace;
+SET SCHEMA 'marketplace';
 
 CREATE TYPE user_role AS ENUM('buyer', 'seller', 'admin');
 CREATE TYPE order_status AS ENUM('new', 'processing', 'shipped', 'completed', 'canceled');
