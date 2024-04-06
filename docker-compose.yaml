@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    ports:
+        - "5432:5432"
+    restart: on-failure:5
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: 1111
+    volumes:
+        - ./data:/var/run/postgres/data
