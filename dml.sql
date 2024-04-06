@@ -1,4 +1,4 @@
-SET SCHEMA 'orders';
+SET SCHEMA 'marketplace';
 
 DELETE FROM users RETURNING *;
 DELETE FROM categories RETURNING *;
